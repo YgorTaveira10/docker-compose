@@ -1,8 +1,8 @@
 import os
-import psycopg2
-import redis
+import psycopg2 # type: ignore
+import redis # type: ignore
 import json
-from bottle import Bottle, request
+from bottle import Bottle, request # type: ignore
 class Sender(Bottle):
     def __init__(self):
         super().__init__()
