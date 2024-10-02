@@ -5,3 +5,5 @@
      sleep 5
      docker-compose exec db psql -U postgres -c '\l'
      docker-compose down
+
+     docker-compose exec db psql -U postgres -f /scripts/check.sql
